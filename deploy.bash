@@ -17,7 +17,7 @@ export PATH="~/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 EOT
-exec $SHELL
+source ~/.bashrc
 
 pyenv install 3.7.9
  
@@ -51,7 +51,7 @@ python manage.py createsuperuser
 
 # the UI -- the horror of node.js 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
-exec $SHELL
+source ~/.bashrc
 nvm install node
 
 cd front
