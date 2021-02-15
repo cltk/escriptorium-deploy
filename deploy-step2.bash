@@ -28,9 +28,10 @@ cd app
 python manage.py migrate
 python manage.py createsuperuser
 
-
 # the UI -- the horror of node.js 
 nvm install node
 cd ../front
 npm install
+npm run production
 
+echo "All done.  To run the server, issue\npython manage.py runserver 0.0.0.0:8000 --settings=escriptorium.local_settings"
