@@ -61,3 +61,5 @@ python manage.py createsuperuser
 
 echo "All done.  To run the server, issue:"
 echo "python manage.py runserver 0.0.0.0:8000 --settings=escriptorium.local_settings"
+
+exec $SHELL
