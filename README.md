@@ -1,11 +1,11 @@
 # escriptorium-deploy
-Script(s) to deploy the [eScriptorium] (https://gitlab.inria.fr/scripta/escriptorium) application.
+Script(s) to deploy the [eScriptorium](https://gitlab.inria.fr/scripta/escriptorium) application.
 
-# Requirements
+## Requirements
 
 Currently the script works on a fresh, stock Debian 10 system, whether running as the host OS, e.g. at a cloud provider, or under the excellent [Windows Subsystem for Linux v2 (WSL2)](https://docs.microsoft.com/en-us/windows/wsl/compare-versions#whats-new-in-wsl-2).
 
-# Installation
+## Installation
 
 Ensure you have `sudo` access to the system.  At the terminal, install `git`:
 
@@ -24,7 +24,7 @@ $ bash deploy.bash
 
 It will run for some time.  At the end, you will be prompted to create a username and password for the administrative ("superuser") account on the system.
 
-# Starting and stopping the application
+## Starting and stopping the application
 
 Depending on where you installed the system, change to the subdirectory containing the application.
 
@@ -40,6 +40,6 @@ $ cd python manage.py runserver 0.0.0.0:8000 --settings=escriptorium.local_setti
 
 It it stopped via CTRL-C in the same terminal.
 
-If running locally, the system should now be accessible at (http://localhost:8000).
+If running locally, the system should now be accessible at http://localhost:8000.
 
 
