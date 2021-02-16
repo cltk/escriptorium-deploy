@@ -55,8 +55,9 @@ cd front
 npm install
 npm run production
 
-cd .//app
+cd ../app
 python manage.py migrate
 python manage.py createsuperuser
 
-echo "All done.  To run the server, issue\npython manage.py runserver 0.0.0.0:8000 --settings=escriptorium.local_settings"
+echo "All done.  To run the server, issue:"
+echo "python manage.py runserver 0.0.0.0:8000 --settings=escriptorium.local_settings"
