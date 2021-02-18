@@ -1,7 +1,7 @@
 sudo apt-get update
 sudo apt-get -y upgrade
-sudo apt-get -y install vim htop git curl
-sudo apt-get -y install postgresql postgresql-contrib
+sudo apt-get -y install vim htop git curl tmux
+sudo apt-get -y install postgresql postgresql-contrib libpq-dev
 sudo apt-get -y install redis-server
 sudo apt-get -y install netcat-traditional jpegoptim pngcrush
 sudo apt-get -y install gfortran libopenblas-dev liblapack-dev
