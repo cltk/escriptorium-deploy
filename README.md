@@ -18,7 +18,7 @@ Then grab the deployment script and run it.
 
 ```shell
 $ git clone https://github.com/cltk/escriptorium-deploy.git
-$ cd escriptorium
+$ cd escriptorium-deploy
 $ bash deploy.bash
 ```
 
