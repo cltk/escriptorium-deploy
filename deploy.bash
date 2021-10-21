@@ -1,3 +1,5 @@
+PYTHON_VERSION=3.7.12
+
 sudo apt-get update
 sudo apt-get -y upgrade
 sudo apt-get -y install vim htop git curl tmux
@@ -24,12 +26,12 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 
 eval "$(awk '/pyenv/ {o=1}; o==1 {print}' ~/.bashrc)"
 
-pyenv install 3.7.9
+pyenv install $PYTHON_VERSION
  
 # download the escriptorium code and install dependencies
 git clone https://gitlab.inria.fr/scripta/escriptorium.git
 cd escriptorium
-pyenv virtualenv 3.7.9 ocr
+pyenv virtualenv $PYTHON_VERSION ocr
 pyenv local ocr
 pip install -U pip
 pip install numpy
